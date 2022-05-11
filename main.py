@@ -1,5 +1,6 @@
 import pandas as pd
 from aitools import understand
+from datetime import datetime
 
 
 def ai(data):
@@ -11,6 +12,9 @@ def ai(data):
 
 # read data
 df = pd.read_csv("data.csv")
+
+# time stamp
+df["TimeStamp"] = datetime.now()
 
 # see insight
 print(ai(df))
