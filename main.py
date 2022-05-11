@@ -1,22 +1,20 @@
 import pandas as pd
 from aitools import understand
-from datetim
-ort datetime
+from datetime import datetime
 
 
-def ai
-(data):
+def ai(data):
     """ this does ai """
+
+    insight = understand(data)
 
     return insight
 
 # read data
-df = pd._csv("data.csv")
+df = pd.read_csv("data.csv")
 
 # time stamp
-df["TimeSmp"] = datetime.now()
+df["TimeStamp"] = datetime.now()
 
 # see insight
 print(ai(df))
-
-# I LOVE BEEEERRRRRRR!!! YEAHHH !
