@@ -1,4 +1,4 @@
-# UoA Machine Learning!
+# UoA Artifical Intelligence!
 
 ## How to run
 
