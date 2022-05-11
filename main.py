@@ -17,4 +17,7 @@ df = pd.read_csv("data.csv")
 df["TimeStamp"] = datetime.now()
 
 # see insight
-print(ai(df))
+result = ai(df)
+
+# plot the insight
+result.plot()
