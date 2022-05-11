@@ -20,4 +20,6 @@ df["TimeStamp"] = datetime.now()
 result = ai(df)
 
 # plot the insight
-result.plot()
+p = result.plot()
+
+p.save("./fig.png")
