@@ -1,5 +1,5 @@
 import pandas as pd
-from aitools import understand
+from aitools import understand, get_connection
 from datetime import datetime
 
 
@@ -21,5 +21,11 @@ result = ai(df)
 
 # plot the insight
 p = result.plot()
+
+# conn
+db = get_connection()
+
+# write to database
+df.write(db)
 
 p.save("./fig.png")
